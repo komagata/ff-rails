@@ -1,0 +1,20 @@
+@import "compass/css3"
+@import "compass/utilities"
+
+$ff-blue: #010080
+
+@font-face
+  font
+    family: 'ferrum'
+    weight: 'normal,bold'
+    style:  'normal'
+    src: asset-url('ferrum', font) format('opentype'), asset-url('ferrum', font) format('opentype')
+
+=box
+  +border-image(image_url("border.png") 15 round)
+  background-color: $ff-blue
+  color: white
+  border:
+    top: 0
+    style: solid
+    width: 20px
